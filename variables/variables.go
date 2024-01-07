@@ -9,11 +9,22 @@ func SetVariables() {
 	var hasPermission bool
 	var username string
 
+	empty := ""
+
 	fmt.Printf(
-		"%v %f %v %q\n",
+		"%v %f %v %q %q\n",
 		smsSendingLimit,
 		costPerSMS,
 		hasPermission,
 		username,
+		empty,
 	)
+
+	penniesPerText := 2
+
+	fmt.Printf("The type of penniesPerText is %T\n", penniesPerText)
+
+	averageOpenRate, displayMessage := .23, "is the average open rate."
+
+	fmt.Println(averageOpenRate, displayMessage)
 }
