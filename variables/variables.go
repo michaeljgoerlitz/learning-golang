@@ -27,4 +27,33 @@ func SetVariables() {
 	averageOpenRate, displayMessage := .23, "is the average open rate."
 
 	fmt.Println(averageOpenRate, displayMessage)
+
+	openRateInt := int(averageOpenRate)
+
+	fmt.Println(openRateInt)
+
+	const premiumPlanName = "Premium Plan"
+	const basicPlanName = "Basic Plan"
+
+	fmt.Println("Plan: ", premiumPlanName)
+	fmt.Println("Plan: ", basicPlanName)
+
+	fmt.Printf("I am %v years old", 10)
+	// I am 10 years old
+
+	fmt.Printf("I am %v years old", "way too many")
+	// I am way too many years old
+
+	fmt.Printf("I am %s years old", "way too many")
+	// I am way too many years old
+
+	fmt.Printf("I am %d years old", 10)
+	// I am 10 years old
+
+	fmt.Printf("I am %f years old", 10.523)
+	// I am 10.523000 years old
+
+	// The ".2" rounds the number to 2 decimal places
+	fmt.Printf("I am %.2f years old", 10.523)
+	// I am 10.53 years old
 }
